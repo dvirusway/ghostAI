@@ -41,7 +41,7 @@ Perfect for developers who want to customize the code.
 
 ```bash
 # Clone the repository
-cd overai-mac
+cd ghostAI
 
 # Setup environment
 python3 -m venv .venv
