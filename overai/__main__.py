@@ -1,5 +1,5 @@
 """
-OverAI command-line entry point.
+GhostAI command-line entry point.
 """
 
 from .main import main

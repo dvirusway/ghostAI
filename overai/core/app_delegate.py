@@ -373,7 +373,7 @@ class AppDelegate(NSObject):
         from ..constants import APP_VERSION
         
         alert = NSAlert.alloc().init()
-        alert.setMessageText_("OverAI")
+        alert.setMessageText_("GhostAI")
         alert.setInformativeText_(
             f"Version {APP_VERSION}\n\n"
             "A lightweight AI overlay for macOS.\n\n"

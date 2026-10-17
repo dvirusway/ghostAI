@@ -150,7 +150,7 @@ class OnboardingWindow:
             False
         )
         
-        self.window.setTitle_("Welcome to OverAI")
+        self.window.setTitle_("Welcome to GhostAI")
         self.window.setDelegate_(self.delegate)
         
         # Setup content
@@ -202,7 +202,7 @@ class OnboardingWindow:
         title = NSTextField.alloc().initWithFrame_(
             NSMakeRect(40, self.WINDOW_HEIGHT - 160, self.WINDOW_WIDTH - 80, 30)
         )
-        title.setStringValue_("OverAI needs Accessibility Permission")
+        title.setStringValue_("GhostAI needs Accessibility Permission")
         title.setBezeled_(False)
         title.setDrawsBackground_(False)
         title.setEditable_(False)
@@ -215,11 +215,11 @@ class OnboardingWindow:
     def add_description(self, parent):
         """Add description text explaining why permission is needed."""
         desc_text = (
-            "OverAI uses accessibility permissions to:\n\n"
+            "GhostAI uses accessibility permissions to:\n\n"
             "• Respond to global keyboard shortcuts (⌘+G)\n"
             "• Stay visible above other windows\n"
             "• Focus input fields automatically\n\n"
-            "Your privacy is protected. OverAI only reads\n"
+            "Your privacy is protected. GhostAI only reads\n"
             "keyboard shortcuts, never your screen content."
         )
         
@@ -255,7 +255,7 @@ class OnboardingWindow:
     def update_status_label(self, is_granted: bool, restarting: bool = False):
         """Update the status label."""
         if restarting:
-            self.status_label.setStringValue_("🔄 Restarting OverAI...")
+            self.status_label.setStringValue_("🔄 Restarting GhostAI...")
             self.status_label.setTextColor_(NSColor.systemBlueColor())
         elif is_granted:
             self.status_label.setStringValue_("✅ Permission Granted!")

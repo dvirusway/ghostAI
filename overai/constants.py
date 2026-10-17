@@ -1,5 +1,5 @@
 """
-Constants for OverAI - Centralized configuration.
+Constants for GhostAI - Centralized configuration.
 """
 
 # Try importing Quartz constants, fallback if not available
@@ -18,7 +18,7 @@ except ImportError:
     kCGEventFlagMaskShift = 0x20000
 
 # App Info
-APP_TITLE = "OverAI"
+APP_TITLE = "GhostAI"
 APP_VERSION = "2.0.0"
 DEFAULT_WEBSITE = "https://grok.com"
 

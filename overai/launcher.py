@@ -1,5 +1,5 @@
 """
-Launcher utilities for OverAI - Startup and permissions management.
+Launcher utilities for GhostAI - Startup and permissions management.
 Optimized for macOS with proper error handling.
 """
 
@@ -18,7 +18,7 @@ from .utils.logger import Logger
 
 logger = Logger("launcher")
 
-APP_TITLE = "OverAI"
+APP_TITLE = "GhostAI"
 APP_BUNDLE_ID = f"com.{getpass.getuser()}.overai"
 
 

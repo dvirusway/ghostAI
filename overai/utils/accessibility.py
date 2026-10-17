@@ -83,7 +83,7 @@ class AccessibilityManager:
         if self.is_voiceover_running():
             # Use AppleScript to announce
             import subprocess
-            script = f'display notification "{message}" with title "OverAI"'
+            script = f'display notification "{message}" with title "GhostAI"'
             subprocess.run(["osascript", "-e", script], capture_output=True)
 
 

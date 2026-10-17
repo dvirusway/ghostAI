@@ -1,5 +1,5 @@
 """
-Setup script for OverAI - macOS AI Overlay Application.
+Setup script for GhostAI - macOS AI Overlay Application.
 Uses py2app for building standalone .app bundles.
 """
 
@@ -48,14 +48,14 @@ OPTIONS = {
     "argv_emulation": False,
     "iconfile": "overai/logo/icon.icns",
     "plist": {
-        "CFBundleName": "OverAI",
-        "CFBundleDisplayName": "OverAI",
+        "CFBundleName": "GhostAI",
+        "CFBundleDisplayName": "GhostAI",
         "CFBundleVersion": version,
         "CFBundleShortVersionString": version,
         "NSHumanReadableCopyright": "© 2024 dvirusway",
         # Permissions
-        "NSMicrophoneUsageDescription": "OverAI needs microphone access for voice input to AI services.",
-        "NSAppleEventsUsageDescription": "OverAI needs accessibility permission for global hotkeys.",
+        "NSMicrophoneUsageDescription": "GhostAI needs microphone access for voice input to AI services.",
+        "NSAppleEventsUsageDescription": "GhostAI needs accessibility permission for global hotkeys.",
         # Security
         "LSBackgroundOnly": False,
         "LSUIElement": True,  # Agent app (no dock icon)
@@ -69,7 +69,7 @@ OPTIONS = {
 }
 
 setup(
-    name="OverAI",
+    name="GhostAI",
     version=version,
     description="AI Overlay for macOS",
     long_description=long_description,

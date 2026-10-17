@@ -1,5 +1,5 @@
 """
-OverAI - A modern, accessible AI overlay for macOS.
+GhostAI - A modern, accessible AI overlay for macOS.
 
 Every AI in a single window.
 Designed with Apple Human Interface Guidelines.

@@ -1,5 +1,5 @@
 """
-OverAI - Main entry point for the macOS AI overlay application.
+GhostAI - Main entry point for the macOS AI overlay application.
 Optimized for memory efficiency and Apple Design compliance.
 """
 
@@ -16,7 +16,7 @@ from .health_checks import health_check_decorator
 
 logger = Logger("main")
 
-APP_TITLE = "OverAI"
+APP_TITLE = "GhostAI"
 PERMISSION_CHECK_EXIT = 1
 
 
@@ -61,7 +61,7 @@ def run_app():
     # Check if we're in a GUI environment
     import os
     if os.environ.get('SSH_CONNECTION') or os.environ.get('SSH_CLIENT'):
-        print("Error: Cannot run OverAI over SSH. Please run locally.")
+        print("Error: Cannot run GhostAI over SSH. Please run locally.")
         sys.exit(1)
     
     # Check permissions

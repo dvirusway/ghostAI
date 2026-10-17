@@ -89,7 +89,7 @@ class ControlBar(NSView):
             "xmark.circle.fill",
             "closeClicked:",
             "Hide window",
-            "Hide the OverAI overlay window",
+            "Hide the GhostAI overlay window",
             "Command+H"
         )
         self.addSubview_(self._close_btn)
@@ -133,7 +133,7 @@ class ControlBar(NSView):
             "power",
             "quitClicked:",
             "Quit application",
-            "Quit OverAI completely",
+            "Quit GhostAI completely",
             "Command+Q"
         )
         self._quit_btn.setContentTintColor_(NSColor.systemRedColor())

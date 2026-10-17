@@ -45,7 +45,7 @@ class StatusBarManager:
         
         # Use system symbol 'sparkles' (AI standard) for reliability
         # This avoids "white square" (solid icon) and "missing" (bad path) issues
-        image = NSImage.imageWithSystemSymbolName_accessibilityDescription_("sparkles", "OverAI")
+        image = NSImage.imageWithSystemSymbolName_accessibilityDescription_("sparkles", "GhostAI")
         
         if image:
             image.setTemplate_(True)
@@ -55,7 +55,7 @@ class StatusBarManager:
         
         # 3. Last resort: System Symbol (Always works)
         # Use a system symbol that looks like 'O'
-        fallback = NSImage.imageWithSystemSymbolName_accessibilityDescription_("circle.circle", "OverAI")
+        fallback = NSImage.imageWithSystemSymbolName_accessibilityDescription_("circle.circle", "GhostAI")
         if fallback:
             self._status_item.button().setImage_(fallback)
             self._status_item.button().setTitle_("")
@@ -77,7 +77,7 @@ class StatusBarManager:
         self._menu = NSMenu.alloc().init()
         
         # App header
-        self._add_item(f"OverAI v{APP_VERSION}", enabled=False)
+        self._add_item(f"GhostAI v{APP_VERSION}", enabled=False)
         self._menu.addItem_(NSMenuItem.separatorItem())
         
         # Window controls
@@ -91,8 +91,8 @@ class StatusBarManager:
         self._menu.addItem_(NSMenuItem.separatorItem())
         
         # Standard app items
-        self._add_item("About OverAI", "about:", "info.circle")
-        self._add_item("Quit OverAI", "quit:", "power", "q")
+        self._add_item("About GhostAI", "about:", "info.circle")
+        self._add_item("Quit GhostAI", "quit:", "power", "q")
     
     def _add_item(self, title: str, action: str = None, icon: str = None, 
                   shortcut: str = "", enabled: bool = True):
