@@ -1,23 +1,7 @@
-<p align="center">
-  <img src="overai/logo/logo.png" width="120" alt="GhostAI Logo"/>
-</p>
+
 
 <h1 align="center">GhostAI</h1>
 <p align="center"><strong>The Seamless AI Bridge for macOS</strong></p>
-
-<p align="center">
-  <a href="#features">Features</a> •
-  <a href="#installation">Download</a> •
-  <a href="#privacy">Privacy</a> •
-  <a href="#development">Development</a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/macOS-12.0%2B-000000?style=for-the-badge&logo=apple&logoColor=white" />
-  <img src="https://img.shields.io/badge/Architecture-Universal-blue?style=for-the-badge" />
-  <a href="https://github.com/N-Saipraveen/overai-mac/releases/download/v2.0.0/OverAI-Installer.dmg"><img src="https://img.shields.io/badge/Download-GhostAI_v2.0-success?style=for-the-badge&logo=apple" /></a>
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
-</p>
 
 ---
 
@@ -52,17 +36,11 @@ Why choose? Use the best model for the task.
 
 ## 📥 Installation
 
-### Option 1: DMG Installer (Recommended)
-1. **[Download GhostAI-Installer.dmg](https://github.com/N-Saipraveen/overai-mac/releases/download/v2.0.0/OverAI-Installer.dmg)** (v2.0.0)
-2. Drag **GhostAI** to your **Applications** folder.
-3. Open it via Spotlight (`Cmd + Space` -> GhostAI).
-
 ### Option 2: Run from Source
 Perfect for developers who want to customize the code.
 
 ```bash
 # Clone the repository
-git clone https://github.com/N-Saipraveen/overai-mac.git
 cd overai-mac
 
 # Setup environment
@@ -71,7 +49,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 # Launch
-python -m overai
+python -m ghostai
 ```
 
 ---

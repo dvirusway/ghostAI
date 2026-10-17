@@ -1,8 +1,8 @@
 Metadata-Version: 2.4
-Name: OverAI
-Version: 1.0.0
+Name: GhostAI
+Version: 2.0.0
 Summary: AI Overlay for macOS
-Author: Sai Praveen
+Author: dvirusway
 Classifier: Development Status :: 4 - Beta
 Classifier: Environment :: MacOS X :: Cocoa
 Classifier: Intended Audience :: End Users/Desktop
@@ -24,11 +24,11 @@ Dynamic: requires-python
 Dynamic: summary
 
 <p align="center">
-  <img src="overai/logo/logo_white.png" width="120" alt="OverAI Logo"/>
+  <img src="overai/logo/logo_white.png" width="120" alt="GhostAI Logo"/>
 </p>
 
-<h1 align="center">OverAI</h1>
-<p align="center"><strong>The Modern AI Overlay for macOS</strong></p>
+<h1 align="center">GhostAI</h1>
+<p align="center"><strong>The Seamless AI Bridge for macOS</strong></p>
 
 <p align="center">
   <a href="#features">Features</a> •
@@ -48,7 +48,7 @@ Dynamic: summary
 
 ## Overview
 
-OverAI is a beautifully crafted, always-on-top overlay that gives you instant access to multiple AI assistants. Designed following Apple's Human Interface Guidelines with a focus on privacy, performance, and accessibility.
+GhostAI is a beautifully crafted, always-on-top overlay that gives you instant access to multiple AI assistants. Designed following Apple's Human Interface Guidelines with a focus on privacy, performance, and accessibility.
 
 **Privacy-first. Lightning fast. Accessible to everyone.**
 
@@ -83,7 +83,7 @@ source .venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 
-# Run OverAI
+# Run GhostAI
 python -m overai
 ```
 
@@ -122,7 +122,7 @@ OverAI integrates with [Ollama](https://ollama.ai) for fully private, local AI:
 1. Install Ollama: `brew install ollama`
 2. Pull a model: `ollama pull llama2`
 3. Start Ollama: `ollama serve`
-4. Select "Local AI" from the OverAI service menu
+4. Select "Local AI" from the GhostAI service menu
 
 The Local AI interface features an iMessage-style chat with blue/gray bubbles.
 
@@ -130,7 +130,7 @@ The Local AI interface features an iMessage-style chat with blue/gray bubbles.
 
 ## Permissions
 
-OverAI requires:
+GhostAI requires:
 
 - **Accessibility** — For global hotkey detection
 - **Microphone** — For voice input (optional)
@@ -174,7 +174,7 @@ python -m overai
 
 ```bash
 python setup.py py2app
-# Output: dist/OverAI.app
+# Output: dist/GhostAI.app
 ```
 
 ---

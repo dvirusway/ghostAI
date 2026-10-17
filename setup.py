@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 # Read version
 version = "2.0.0"
 try:
-    with open("overai/about/version.txt") as f:
+    with open("ghostai/about/version.txt") as f:
         version = f.read().strip()
 except:
     pass
@@ -20,11 +20,11 @@ try:
 except:
     long_description = "AI Overlay for macOS"
 
-APP = ["OverAI.py"]
+APP = ["GhostAI.py"]
 
 # py2app options
 OPTIONS = {
-    "packages": ["overai"],
+    "packages": ["ghostai"],
     "includes": [
         "objc",
         "AppKit",
@@ -46,7 +46,7 @@ OPTIONS = {
         "torch",
     ],
     "argv_emulation": False,
-    "iconfile": "overai/logo/icon.icns",
+    "iconfile": "ghostai/logo/icon.icns",
     "plist": {
         "CFBundleName": "GhostAI",
         "CFBundleDisplayName": "GhostAI",
@@ -78,7 +78,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     package_data={
-        "overai": [
+        "ghostai": [
             "about/*.txt",
             "logo/*.png",
             "logo/*.icns",
@@ -89,7 +89,8 @@ setup(
     python_requires=">=3.9",
     entry_points={
         "console_scripts": [
-            "overai=overai.main:main",
+            "ghostai=ghostai.main:main",
+            "overai=ghostai.main:main",
         ],
     },
     app=APP,
